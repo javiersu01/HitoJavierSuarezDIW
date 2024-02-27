@@ -1,0 +1,27 @@
+.intro-content {
+    text-align: center;
+  }
+  
+  .intro-content h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .adventures-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .adventures-card ion-item.adventure-item {
+    padding: 10px;
+  }
+  
+  .adventures-card ion-item.adventure-item ion-thumbnail {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  .adventures-card ion-item.adventure-item ion-label {
+    margin-left: 10px;
+  }
+  

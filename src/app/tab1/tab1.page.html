@@ -1,17 +1,126 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<h1>Bienvenido a nuestra Aplicación Ionic</h1>
+<ion-content class="ion-padding">
+   <div class="card-container">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="container">
+      <ion-card class="log-card">
+        <ion-card-header>
+          <ion-card-title>Welcome Back</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>We are you to have you Again</p>
+
+          <ion-item>
+            <ion-label position="floating">Username</ion-label>
+            <ion-input type="text" placeholder="For Ex: Jayakrishna007"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" placeholder="Enter Password"></ion-input>
+          </ion-item>
+
+          <div class="password-group">
+            <ion-item lines="none" class="checkbox-group">
+              <ion-checkbox slot="start"></ion-checkbox>
+              <ion-label class="label">Remember Me</ion-label>
+            </ion-item>
+            <a href="#" class="forget-password">Forget Password</a>
+          </div>
+
+          <ion-button expand="block" color="primary" class="btn">Sign In</ion-button>
+
+          <p class="no-account">Don't Have an Account ?<a class="link"> Sign Up</a></p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
 </ion-content>
+
+<style>
+ 
+  .card-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .circle1,
+  .circle2 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #e3f2fd;
+  }
+
+  .circle1 {
+    top: -50px;
+    left: -50px;
+  }
+
+  .circle2 {
+    bottom: -50px;
+    right: -50px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .log-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .input-group {
+    margin-bottom: 20px;
+  }
+
+  .input {
+    margin-bottom: 10px;
+  }
+
+  .password-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .checkbox-group {
+    margin-right: auto;
+  }
+
+  .forget-password {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  .no-account {
+    text-align: center;
+  }
+
+  .link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+</style>

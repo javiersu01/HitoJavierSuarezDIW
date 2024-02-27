@@ -1,0 +1,106 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Playas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Playas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-img
+            src="../../assets/img/javi/playa1.jpg"
+            alt="Playa 1"
+            style="width: 100%; height: 400px; object-fit: cover"
+          ></ion-img>
+          <ion-card-header>
+            <ion-card-title>Playa 1</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="font-size: 14px">
+              Disfruta del sol, la arena y el mar en la impresionante Playa 1. Con aguas cristalinas y suaves arenas blancas, esta playa es el lugar perfecto para relajarse y disfrutar de la naturaleza en su máxima expresión.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card>
+          <ion-img
+            src="../../assets/img/javi/playa2.jpg"
+            alt="Playa 2"
+            style="width: 100%; height: 400px; object-fit: cover"
+          ></ion-img>
+          <ion-card-header>
+            <ion-card-title>Playa 2</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p style="font-size: 14px">
+              Sumérgete en la belleza natural de la Playa 2, donde el océano azul turquesa se encuentra con la exuberante vegetación costera. Con su ambiente tranquilo y sereno, esta playa es un refugio perfecto para escapar del bullicio de la vida cotidiana.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<style>
+    ion-content {
+  --background: #222121;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  color: #666;
+}
+
+ion-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+ion-card-header {
+  background-color: #535353;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+ion-card-title {
+  font-size: 20px;
+}
+
+ion-card-content {
+  padding: 20px;
+}
+
+ion-item {
+  --padding-start: 0;
+  --inner-padding-end: 0;
+  --inner-padding-start: 0;
+  --border-color: transparent;
+  --inner-border-width: 0;
+}
+
+ion-icon {
+  color: #009688;
+  font-size: 20px;
+  margin-right: 10px;
+}
+</style>
